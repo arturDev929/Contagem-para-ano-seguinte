@@ -1,5 +1,5 @@
 // Data alvo: 1 de Janeiro de 2026, 00:00:00
-const anoNovo2026 = new Date('July 25, 2026 00:00:00').getTime();
+const anoNovo2026 = new Date('January 1, 2026 00:00:00').getTime();
         
 // Elementos DOM
 const anoAtualElemento = document.getElementById('ano-atual');
