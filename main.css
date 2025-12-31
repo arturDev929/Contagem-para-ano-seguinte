@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+        
+body {
+    background: linear-gradient(135deg, #0c2461, #1e3799, #4a69bd);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+        
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+        
+.ano-atual {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #f6b93b;
+}
+        
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+        
+.unidade-tempo {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px 15px;
+    min-width: 130px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+        
+.valor {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #78e08f;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+}
+        
+.rotulo {
+    font-size: 1.2rem;
+    color: #f6b93b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+        
+.separador {
+    font-size: 3rem;
+    color: white;
+    align-self: center;
+    margin: 0 5px;
+}
+        
+.fireworks {
+    font-size: 3rem;
+    margin-top: 30px;
+    display: none;
+}
+        
+@media (max-width: 768px) {
+    .container {
+                padding: 30px 20px;
+    }
+            
+    .ano-atual {
+        font-size: 3rem;
+    }
+            
+    .contador {
+        gap: 10px;
+    }
+            
+    .unidade-tempo {
+        min-width: 110px;
+        padding: 20px 10px;
+    }
+            
+    .valor {
+        ont-size: 2.8rem;
+    }
+}
+        
+@media (max-width: 576px) {
+        .ano-atual {
+            font-size: 2.5rem;
+    }
+                
+        .contador {
+            gap: 8px;
+    }
+                
+        .unidade-tempo {
+            min-width: 85px;
+            padding: 15px 8px;
+    }
+                
+        .valor {
+            font-size: 2.2rem;
+    }
+                
+        .separador {
+            font-size: 2rem;
+            margin: 0 2px;
+    }
+}
