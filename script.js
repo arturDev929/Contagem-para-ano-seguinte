@@ -16,11 +16,11 @@ function atualizarContagem() {
     const agora = new Date().getTime();
             
     // Diferença entre agora e o ano novo
-    const diferenca = anoNovo2026 - agora;
+    const diferenca = anoNovo2027 - agora;
             
     if (diferenca <= 0) {
         // Ano novo chegou
-        anoAtualElemento.textContent = '2026';
+        anoAtualElemento.textContent = '2027';
         felizElemento.textContent = 'Feliz Ano Novo!';
         diasElemento.textContent = '00';
         horasElemento.textContent = '00';
